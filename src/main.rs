@@ -2,12 +2,12 @@
 
 #[get("/add")]
 fn add() -> &'static str {
-    "Hey! Let's add!"
+    "Hey! Let's add numbers!"
 }
 
 #[get("/add/<a>")]
 fn add_a(a: u32) -> String {
-    format!("Hey! Let's add! Your first input is here: {} but you haven't put another number <b>", a)
+    format!("Hey! Let's add! Your first input is here: {} but you haven't put another number", a)
 }
 
 #[get("/add/<a>/<b>")]
